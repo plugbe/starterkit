@@ -1,51 +1,83 @@
-<?php
-/*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
+				<footer class="footer text-white">
+					<div class="footer-inner">
+						<div class="footer-main">
+							<div class="footer-logo">
+								<a href="<?= $site->url() ?>">
+									<img src="<?= u('assets/images/logo.png') ?>" alt="<?= $site->title() ?>">
+								</a>
+							</div>
 
-  This footer snippet is reused in all templates.
+							<div class="footer-content">
+								<div class="footer-content-info">
+									<ul>
+										<?php foreach($site->info1()->toStructure() as $info): ?>
+											<li><i><?= snippet('svg/' . $info->icon1()) ?></i><?= $info->text1()->kt() ?></li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
 
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
-*/
-?>
-  </main>
+								<div class="footer-content-newsletter"><?= $site->newsletter1()->kt() ?></div>
+								<div class="footer-content-social">
+									<?php foreach($site->socials1()->toStructure() as $social): ?>
+										<a href="<?= $social->url() ?>"><?= $social->socialtype1() ?></a>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+						<div class="footer-secondary"></div>
+					</div>
+				</footer>
+  			</div>
+		</div>
+	</main>
 
-  <footer class="footer">
-    <div class="grid">
-      <div class="column" style="--columns: 8">
-        <h2><a href="https://getkirby.com">Made with Kirby</a></h2>
-        <p>
-          Kirby: the file-based CMS that adapts to any project, loved by developers and editors alike
-        </p>
-      </div>
-      <div class="column" style="--columns: 2">
-        <h2>Pages</h2>
-        <ul>
-          <?php foreach ($site->children()->listed() as $example): ?>
-          <li><a href="<?= $example->url() ?>"><?= $example->title()->esc() ?></a></li>
-          <?php endforeach ?>
-        </ul>
-      </div>
-      <div class="column" style="--columns: 2">
-        <h2>Kirby</h2>
-        <ul>
-          <li><a href="https://getkirby.com">Website</a></li>
-          <li><a href="https://getkirby.com/docs">Docs</a></li>
-          <li><a href="https://forum.getkirby.com">Forum</a></li>
-          <li><a href="https://chat.getkirby.com">Chat</a></li>
-          <li><a href="https://github.com/getkirby">GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+	<!-- Cookie Consent by TermsFeed Privacy Policy and Consent Generator https://www.TermsFeed.com -->
+	<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+	<script type="text/javascript" charset="UTF-8">
+		document.addEventListener('DOMContentLoaded', function () {
+			cookieconsent.run({
+				"notice_banner_type": "simple",
+				"consent_type": "express",
+				"palette": "light",
+				"language": "<?= $site->language(); ?>",
+				"page_load_consent_levels": ["strictly-necessary"],
+				"notice_banner_reject_button_hide": false,
+				"preferences_center_close_button_hide": false,
+				"page_refresh_confirmation_buttons": false,
+				"website_privacy_policy_url": "<?= page('privacy-policy')->url(); ?>",
+				"website_name": "Website Naam"
+			});
+		});
+	</script>
 
-  <?= js([
-    'assets/js/prism.js',
-    'assets/js/lightbox.js',
-    'assets/js/index.js',
-    '@auto'
-  ]) ?>
+	<!-- Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics PLUG-->
+	<script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=IDHIER"></script>
+	<script type="text/plain" cookie-consent="tracking">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
+		gtag('config', 'IDHIER');
+	</script>
+	<!-- end of Google Analytics-->
+	<!-- End Cookie Consent by TermsFeed Privacy Policy and Consent Generator https://www.TermsFeed.com -->
+  
+  <!-- JS ==================================================================== -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="<?= url('assets/js/plugins/barba.umd.js') ?>" type="text/javascript"></script>
+	<script src="<?= url('assets/js/plugins/fancybox.umd.js') ?>" type="text/javascript"></script>
+	<script src="<?= url('assets/js/plugins/swiper-bundle.min.js') ?>" type="text/javascript"></script>
+
+	<script src="<?= url('assets/js/plugins/gsap.min.js') ?>" type="text/javascript"></script>
+	<script src="<?= url('assets/js/plugins/ScrollTrigger.min.js') ?>" type="text/javascript"></script>
+	<script src="<?= url('assets/js/plugins/ScrollToPlugin.min.js') ?>" type="text/javascript"></script>
+
+    <script src="<?php echo url('assets/js/min/plugins.min.js?v=' . $site->timestamp()->text()); ?>" type="text/javascript"></script>
+	<script src="<?= url('assets/js/min/checkbrowser.min.js?v=' . $site->timestamp()->text()); ?>" type="text/javascript"></script>
+	<script src="<?= url('assets/js/min/base.min.js?v=' . $site->timestamp()->text()); ?>" type="text/javascript"></script>
+	<script src="<?php echo url('assets/js/min/scripts.min.js?v=' . $site->timestamp()->text()); ?>" type="text/javascript"></script>
+
+	<?= snippet('seo/schemas'); ?>
 </body>
 </html>

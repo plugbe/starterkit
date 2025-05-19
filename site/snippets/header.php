@@ -1,87 +1,55 @@
-<?php
-/*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
-
-  This header snippet is reused in all templates.
-  It fetches information from the `site.txt` content file
-  and contains the site navigation.
-
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
-*/
-?>
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="<?= $site->lang(); ?>">
 <head>
+	<meta charset="utf-8">
+	<?= snippet('seo/head'); ?>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="format-detection" content="telephone=no">
 
-  <?php
-  /*
-    In the title tag we show the title of our
-    site and the title of the current page
-  */
-  ?>
-  <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
 
-  <?php
-  /*
-    Stylesheets can be included using the `css()` helper.
-    Kirby also provides the `js()` helper to include script file.
-    More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers
-  */
-  ?>
-  <?= css([
-    'assets/css/prism.css',
-    'assets/css/lightbox.css',
-    'assets/css/index.css',
-    '@auto'
-  ]) ?>
+	<?= css('assets/css/style.css?v=' . $site->timestamp()->text()); ?>
+	<?= css('assets/css/jquery.fancybox.min.css'); ?>
+	<?= css('assets/css/swiper-bundle.min.css'); ?>
 
-  <?php
-  /*
-    The `url()` helper is a great way to create reliable
-    absolute URLs in Kirby that always start with the
-    base URL of your site.
-  */
-  ?>
-  <link rel="shortcut icon" type="image/x-icon" href="<?= url('favicon.ico') ?>">
+	<!-- FAVICON'S ============================================================= -->
+	<link rel="icon" type="image/png" href="<?php echo url('assets/images/favicons/favicon.png') ?>" />
+	<link rel="apple-touch-icon" href="<?php echo url('assets/images/favicons/apple-touch-icon.png') ?>" />
+	<meta name="msapplication-TileColor" content="#000000" />
+	<meta name="format-detection" content="telephone=no">
+	<?php if (strpos($site->url(), "plugdev") !== false): ?>
+		<meta name="robots" content="noindex,nofollow">
+	<?php endif ?>
 </head>
-<body>
 
-  <header class="header">
-    <?php
-    /*
-      We use `$site->url()` to create a link back to the homepage
-      for the logo and `$site->title()` as a temporary logo. You
-      probably want to replace this with an SVG.
-    */
-    ?>
-    <a class="logo" href="<?= $site->url() ?>">
-      <?= $site->title()->esc() ?>
-    </a>
+<body data-barba="wrapper" class="<?= $page->template(); ?>">
+	<?= snippet('components/popup'); ?>
 
-    <nav class="menu">
-      <?php
-      /*
-        In the menu, we only fetch listed pages,
-        i.e. the pages that have a prepended number
-        in their foldername.
+	<main data-barba="container" data-barba-namespace="<?= $page->template(); ?>">
+		<header class="header">
+			<div class="header-inner">
+				<div class="header-logo">
+					<div class="header-logo-inner">
+						<a href="<?= $site->url() ?>">
+							<img src="<?= u('assets/images/logo.png') ?>" alt="<?= $site->title() ?>">
+						</a>
+					</div>
+				</div>
 
-        We do not want to display links to unlisted
-        `error`, `home`, or `sandbox` pages.
+				<div class="header-navigation">
+					<div class="header-navigation-inner">
+						<?= snippet('nav'); ?>
+					</div>
+				</div>
+			</div>
+		</header>
 
-        More about page status:
-        https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-      */
-      ?>
-      <?php foreach ($site->children()->listed() as $item): ?>
-      <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-      <?php endforeach ?>
-      <?php snippet('social') ?>
-    </nav>
-  </header>
+		<div class="spacer"></div>
 
-  <main class="main">
+		<div class="web-container">
+			<?php if($page->intendedTemplate() == "accessoire" || $page->intendedTemplate() == "realisatie-cat" || $page->intendedTemplate() == "realisatie"): ?>
+				<?= snippet('components/breadcrumbs'); ?>
+			<?php endif; ?>
+			<div class="<?= $page->template(); ?>__container" id="content">
+

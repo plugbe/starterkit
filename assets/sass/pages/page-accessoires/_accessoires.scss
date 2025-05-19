@@ -1,0 +1,28 @@
+.accessoires {
+    &-list {
+        padding-inline: 200px;
+
+
+        @include desktop {
+            padding-inline: 50px;
+        }
+
+        &-inner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+
+            @include desktop {
+                gap: 25px;
+            }
+
+            @include tablet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include phone {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}

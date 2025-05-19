@@ -1,3 +1,9 @@
 [submodule "site/plugins/plug-panelforms"]
 	path = site/plugins/plug-panelforms
 	url = https://github.com/remysiri/plug-panelforms.git
+[submodule "site/plugins/kirby-uniform"]
+	path = site/plugins/kirby-uniform
+	url = https://github.com/mzur/kirby-uniform.git
+[submodule "site/plugins/kirby-seo"]
+	path = site/plugins/kirby-seo
+	url = https://github.com/tobimori/kirby-seo.git

@@ -1,0 +1,17 @@
+.card {
+    padding-inline: 40px;
+    padding-block: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    text-decoration: none;
+    color: $black;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

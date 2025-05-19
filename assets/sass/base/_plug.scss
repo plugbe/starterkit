@@ -1,0 +1,136 @@
+/* VARIABLES =================================================================== */
+/*
+$gutter: 2%;
+$columns: 16;
+*/
+$font: sans-serif;
+
+
+/* STYLES ====================================================================== */
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    max-width: 3000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+p{
+    margin-top: 0;
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+#form-success{
+    display: none;
+}
+#feedback{
+    &.erroneous, &.error{
+        padding: 10px;
+        text-align: center;
+        background-color: crimson;
+        color: #fff;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+}
+
+.text-sm {
+    font-size: $text-14;
+}
+
+.text-base {
+    font-size: $text-18;
+}
+
+.text-lg {
+    font-size: $text-20;
+}
+
+.text-xl {
+    font-size: $text-35;
+}
+
+.text-2xl {
+    font-size: $text-50;
+}
+
+.font-regular {
+    font-weight: $font-book;
+}
+
+.font-medium {
+    font-weight: $font-medium;
+}
+
+.font-bold {
+    font-weight: $font-bold;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-darkblue {
+    background-color: $darkblue;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.border-white {
+    border: 2px solid $white;
+}
+
+.border-red {
+    border: 2px solid $red;
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0, 3, 6, 0.2);
+}

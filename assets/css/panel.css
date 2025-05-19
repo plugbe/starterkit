@@ -1,0 +1,24 @@
+/*.k-panel{
+    background: #ffffff;
+}*/
+.k-login-form{
+    position: relative;
+}
+.k-login-form:before{
+    width: 100px;
+    height: 46px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    content: '';
+    background-image: url('../images/panel/plug.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 0 24px 0;
+    display: block;
+}
+.k-activation-button, .k-activation {
+    display: none!important;
+}

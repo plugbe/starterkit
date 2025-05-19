@@ -1,0 +1,122 @@
+Title: PLUG CMS
+
+----
+
+Nav1: home, tom-lock-bedrijfswageninrichting, vloerlades, accessoires, realisaties, contact
+
+----
+
+Contact1: 
+
+----
+
+Info1:
+
+- 
+  icon1: location
+  text1: '(link: https://maps.app.goo.gl/NSZ2ZXar3G6DVNzb6 text: Schardouwstraat 2 - Izegem target: _blank)'
+- 
+  icon1: phone
+  text1: '(link: tel:+32472632090 text: +32 472 63 20 90)'
+- 
+  icon1: mail
+  text1: '(email: info@dmi-bedrijfswageninrichting.be text: info@dmi-bedrijfswageninrichting.be)'
+
+----
+
+Newsletter1:
+
+Benieuwd hoe wij jouw bedrijfswagen kunnen optimaliseren? 
+Laat je e-mailadres na, dan nemen wij vrijblijvend contact op.
+
+----
+
+Socials1:
+
+- 
+  socialtype1: facebook
+  socialurl1: https://google.com
+
+----
+
+Timestamp: 1
+
+----
+
+Scripts1: 
+
+----
+
+Metatemplate: {{ title }} Lorem ipsum
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogsitename: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: summary
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Socialmediaaccounts: 
+
+----
+
+Logo1: 
+
+----
+
+Schemaorg: 
+
+----
+
+Seotitle: Template Plug
+
+----
+
+Seodescription: This is the site description
+
+----
+
+Seoimg: - og-image.jpg
+
+----
+
+Pages: 

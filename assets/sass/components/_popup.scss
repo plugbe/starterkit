@@ -1,0 +1,20 @@
+.fancybox {
+    &__content {
+        padding: 5rem!important;
+
+        .carousel__button {
+    
+            &.is-close {
+                top: 0!important;
+                right: 0;
+
+                svg {
+                    color: $black;
+                    filter: none;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}

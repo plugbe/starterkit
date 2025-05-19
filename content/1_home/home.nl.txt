@@ -1,0 +1,96 @@
+Title: Home
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Text: 
+
+----
+
+Image1: 
+
+----
+
+Slider:
+
+- layer-17.jpg
+- logo_plug.jpg
+
+----
+
+Seotitle: 
+
+----
+
+Seodescription: 
+
+----
+
+Seoimg: 
+
+----
+
+Uuid: yFfU2TgF3nUCPet0

@@ -1,0 +1,8 @@
+Title: Error
+
+----
+
+Body1:
+
+De pagina die u probeert te bereiken is niet (meer) beschikbaar.
+Terug naar de (link: / text: homepagina)

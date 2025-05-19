@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.web-container {
+
+}
+
+.error {
+    &__container {
+        a {
+            color: unset;
+            text-decoration: underline;
+        }
+    }
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}

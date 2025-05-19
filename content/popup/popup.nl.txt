@@ -1,0 +1,97 @@
+Title: Popup
+
+----
+
+Text: Test inhoud
+
+----
+
+Display1: 
+
+----
+
+Metatitle: 
+
+----
+
+Metatemplate: 
+
+----
+
+Usetitletemplate: true
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Useogtemplate: true
+
+----
+
+Ogdescription: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: 
+
+----
+
+Twitterauthor: 
+
+----
+
+Robotsindex: default
+
+----
+
+Robotsfollow: default
+
+----
+
+Robotsarchive: default
+
+----
+
+Robotsimageindex: default
+
+----
+
+Robotssnippet: default
+
+----
+
+Metainherit: 
+
+----
+
+Seotitle: 
+
+----
+
+Seodescription: 
+
+----
+
+Seoimg: 
+
+----
+
+Image1: 
+
+----
+
+Slider: 
+
+----
+
+Uuid: vcVCGF1CRrQiEYi3

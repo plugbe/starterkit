@@ -1,0 +1,185 @@
+form, input, label, textarea {
+	box-sizing: border-box;
+	// display: block;
+}
+
+form {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	.error {
+		color: crimson;
+	
+		&::placeholder {
+			color: crimson;
+		}
+	
+		&+label {
+			color: crimson;
+			font-weight: bold;
+	
+			a {
+				color: crimson!important;
+			}
+		}
+	
+		a {
+			color: crimson;
+		}
+	
+		.checkbox {
+			&:before {
+				border: .5px solid crimson;
+			}
+		}
+	}
+
+	.form-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+
+		.form-group {
+			grid-column: span 1;
+
+			&.w-full {
+				grid-column: span 2;
+			}
+		}
+	}
+}
+
+.form-group {
+	border-bottom: 1px solid lighten(#888888, 25);
+	margin-top: -1px; // border collapser
+	position: relative;
+
+	&.policy {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+		line-height: 2;
+		padding-block: 20px;
+	
+		a {
+			color: $black;
+			text-decoration: underline;
+		}
+	}
+}
+
+.noline {
+    border-bottom: none;
+    margin-top: 0;
+}
+
+label, input {
+	transition: color 0.4s ease, background-color 0.1s ease-in-out;
+}
+
+label {
+	// labels are after the input in the HTML...
+	color: $black;
+	
+	// ... move it up top ...
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+input, textarea {
+	background-color: transparent;
+	border: none;
+	color: #888888;
+	font-size: $text-18;
+	margin: 9px 0 7px 0;
+	margin: 0;
+	padding: 10px 0 10px 0;
+	outline: none;
+	width: 100%;
+	
+    &:focus {
+        color: #000;
+        background-color: #888888, 40;
+        box-shadow: 0px 3px 4px -2px rgba($black,0.25) inset;
+    }
+
+    &.error {
+        padding: 10px 0 2em 0;
+    }
+}
+
+.error-text {
+    position: absolute;
+    bottom: 10px;
+	left: 10px;
+	margin: 0;
+
+    font-size: 70%;
+	letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: crimson;
+    
+    &.error-policy {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+#policy {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -99999999px;
+
+	&:checked + label:after {
+		content: '';
+		background: $black;
+		border: .5px solid $black;
+		position: absolute;
+		top: 10px;
+		left: -25px;
+		width: 15px;
+		height: 15px;
+	}
+}
+
+.checkbox {
+	position: relative;
+	margin-left: 20px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		border: .5px solid $black;
+		left: -25px;
+		top: 10px;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+// specific label styles
+.label {
+	&--required {
+		&:after {
+			content:"*";
+			color: crimson;
+			margin-left: 5px;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.b-cards {
+    padding-inline: 50px;
+
+    &-inner {
+        padding-block: 100px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 3, 6, 0.2);
+
+        @include desktop {
+            padding-block: 50px;
+
+            h2 {
+                padding-inline: 50px;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+        justify-content: center;
+        padding-inline: 70px;
+        padding-top: 90px;
+
+        @include desktop {
+            padding-inline: 50px;
+            gap: 50px;
+            padding-top: 50px;
+        }
+    }
+}
+
+.b-card {
+    max-width: calc(100% / 5 - 56px);
+    box-shadow: 0 0 10px rgba(0, 3, 6, 0.2);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-inline: 30px;
+    padding-block: 60px;
+
+    @include desktop {
+        max-width: calc(100% / 3 - 40px);
+    }
+
+    @include tablet {
+        max-width: calc(100% / 2 - 30px);
+    }
+
+    @include phone {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &-icon {
+        width: 54px;
+        height: 54px;
+    }
+}

@@ -1,0 +1,20 @@
+$black: #3B3B3B;
+$darkblue: #151422;
+$white: #FAFAFA;
+$gray: #F2F2F2;
+$red: #BC373B;
+
+$gotham: 'Gotham', sans-serif;
+
+$font-book: 400;
+$font-medium: 500;
+$font-bold: 600;
+
+$text-50: #{fluid(30px, 50px, 320px, 1920px)};
+$text-35: #{fluid(20px, 35px, 320px, 1920px)};
+$text-20: #{fluid(15px, 20px, 320px, 1920px)};
+$text-18: #{fluid(14px, 18px, 320px, 1920px)};
+$text-16: #{fluid(12px, 16px, 320px, 1920px)};
+$text-14: #{fluid(10px, 14px, 320px, 1920px)};
+
+$spacer: #{fluid(106px, 176px, 320px, 1920px)};

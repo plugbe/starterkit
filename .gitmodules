@@ -1,0 +1,3 @@
+[submodule "site/plugins/plug-panelforms"]
+	path = site/plugins/plug-panelforms
+	url = https://github.com/remysiri/plug-panelforms.git

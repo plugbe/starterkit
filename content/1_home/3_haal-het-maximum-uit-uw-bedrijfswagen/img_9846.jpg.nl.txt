@@ -1,5 +1,0 @@
-Uuid: WaWRSMOS2ufHfL12
-
-----
-
-Template: image

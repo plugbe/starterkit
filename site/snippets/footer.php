@@ -1,31 +1,4 @@
-				<footer class="footer text-white">
-					<div class="footer-inner">
-						<div class="footer-main">
-							<div class="footer-logo">
-								<a href="<?= $site->url() ?>">
-									<img src="<?= u('assets/images/logo.png') ?>" alt="<?= $site->title() ?>">
-								</a>
-							</div>
-
-							<div class="footer-content">
-								<div class="footer-content-info">
-									<ul>
-										<?php foreach($site->info1()->toStructure() as $info): ?>
-											<li><i><?= snippet('svg/' . $info->icon1()) ?></i><?= $info->text1()->kt() ?></li>
-										<?php endforeach; ?>
-									</ul>
-								</div>
-
-								<div class="footer-content-newsletter"><?= $site->newsletter1()->kt() ?></div>
-								<div class="footer-content-social">
-									<?php foreach($site->socials1()->toStructure() as $social): ?>
-										<a href="<?= $social->url() ?>"><?= $social->socialtype1() ?></a>
-									<?php endforeach; ?>
-								</div>
-							</div>
-						</div>
-						<div class="footer-secondary"></div>
-					</div>
+				<footer class="footer">
 				</footer>
   			</div>
 		</div>

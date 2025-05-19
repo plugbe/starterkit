@@ -5,21 +5,6 @@
             <p class="error-text error-email"></p>
         </div>
 
-        <div class="form-group group-email">
-            <input name="email" type="email" placeholder="<?= t('e-mailadres') ?>"value="">
-            <p class="error-text error-email"></p>
-        </div>
-
-        <div class="form-group group-email">
-            <input name="email" type="email" placeholder="<?= t('e-mailadres') ?>"value="">
-            <p class="error-text error-email"></p>
-        </div>
-
-        <div class="form-group group-email">
-            <input name="email" type="email" placeholder="<?= t('e-mailadres') ?>"value="">
-            <p class="error-text error-email"></p>
-        </div>
-
         <div class="form-group group-message w-full">
             <textarea name="message" placeholder="<?= t('boodschap') ?>"></textarea>
             <p class="error-text error-message"></p>

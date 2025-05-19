@@ -32,7 +32,7 @@
 				<div class="header-logo">
 					<div class="header-logo-inner">
 						<a href="<?= $site->url() ?>">
-							<img src="<?= u('assets/images/logo.png') ?>" alt="<?= $site->title() ?>">
+							Logo
 						</a>
 					</div>
 				</div>

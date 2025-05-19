@@ -1,4 +1,25 @@
-Title: Home
+Title: Contact
+
+----
+
+Title1: Contact
+
+----
+
+Text:
+
+(tel:+0000000000 text:+00 [[0]] 000 00 00)
+
+
+(columns…)
+
+Left column
+
+++++
+
+Right column
+
+(…columns)
 
 ----
 
@@ -66,21 +87,6 @@ Metainherit:
 
 ----
 
-Text: 
-
-----
-
-Image1: 
-
-----
-
-Slider:
-
-- layer-17.jpg
-- logo_plug.jpg
-
-----
-
 Seotitle: 
 
 ----
@@ -93,4 +99,4 @@ Seoimg:
 
 ----
 
-Uuid: yFfU2TgF3nUCPet0
+Uuid: n63AZAhXn2BeVAHa

@@ -38,8 +38,6 @@ tabs:
         templates:
           - home
           - default
-          - accessoires
-          - realisaties
           - contact
 
       fields2:

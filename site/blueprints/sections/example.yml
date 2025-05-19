@@ -1,0 +1,8 @@
+# label: Carousel
+# type: structure
+# fields:
+#   img1:
+#     label: Afbeelding
+#     type: files
+#     uploads: false
+#     multiple: false

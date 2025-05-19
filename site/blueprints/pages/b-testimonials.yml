@@ -1,0 +1,56 @@
+title: Testimonials
+options:
+  changeStatus: true
+tabs:
+  content:
+    sections: # here come the sections
+      fields: # a fields section
+        type: fields
+        fields:
+          line1:
+            type: line
+
+          bg1:
+            label: Achtergrond
+            type: toggle
+            width: 1/2
+
+          reverse1:
+            label: Positie
+            type: toggle
+            text:
+              - "Tekst links"
+              - "Tekst rechts"
+            width: 1/2
+
+          smalltitle1:
+            label: Titel
+            type: text
+
+          title1:
+            label: Titel
+            type: info
+            text: |
+              Titel is bepaald adhv pagina titel.
+
+          body1:
+            label: Tekst
+            type: textarea
+
+          btn1: components/button
+
+
+          line2:
+            type: line
+
+          img1:
+            label: Afbeelding
+            type: files
+            multiple: false
+            uploads: image
+            query: page.images
+
+            # section1: sections/example
+
+  # files: tabs/files
+  bestanden: tabs/files

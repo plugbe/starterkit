@@ -1,4 +1,4 @@
-title: Home
+title: Fullscreen beeld
 options:
   changeStatus: true
 tabs:
@@ -9,11 +9,15 @@ tabs:
         fields:
           line1:
             type: line
+          
+          img1:
+            label: Afbeelding
+            type: files
+            multiple: false
+            uploads: image
+            query: page.images
 
-      pages: sections/builder
-
-        # section1: sections/example
+            # section1: sections/example
 
   # files: tabs/files
   bestanden: tabs/files
-  seo: seo/page

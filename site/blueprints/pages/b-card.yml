@@ -1,0 +1,34 @@
+title: Horizontale cards
+options:
+  changeStatus: true
+tabs:
+  content:
+    sections: # here come the sections
+      fields: # a fields section
+        type: fields
+        fields:
+          line1:
+            type: line
+          
+          icon1:
+            label: Icon
+            type: files
+            multiple: false
+            uploads: images
+            query: page.images
+          
+          title1:
+            label: Titel
+            type: info
+            text: |
+              Titel is bepaald adhv pagina titel.
+          
+          body1:
+            label: Tekst
+            type: textarea
+            buttons: false
+
+            # section1: sections/example
+
+  # files: tabs/files
+  bestanden: tabs/files

@@ -1,0 +1,13 @@
+title: Image
+
+accept:
+  mime: image/jpeg, image/png
+
+fields:
+  alt:
+    label: Alt Text
+    type: text
+  crop:
+    label: Image Crop
+    type: imagecrop
+    #preserveAspectRatio: true

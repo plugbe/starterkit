@@ -1,0 +1,9 @@
+label: Button
+type: structure
+fields:
+  btnlabel:
+    label: Button text
+    type: text
+  btnlink:
+    label: Button link
+    type: link

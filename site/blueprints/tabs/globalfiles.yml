@@ -1,0 +1,9 @@
+sections: # here come the sections
+  allimages: # a files section
+    headline: Afbeeldingen
+    type: files
+    template: image
+  allpdf:
+    headline: PDF
+    type: files
+    template: pdf

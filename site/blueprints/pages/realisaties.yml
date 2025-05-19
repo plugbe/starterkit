@@ -1,4 +1,4 @@
-title: Home
+title: Realisaties
 options:
   changeStatus: true
 tabs:
@@ -11,6 +11,16 @@ tabs:
             type: line
 
       pages: sections/builder
+
+      realisaties:
+        type: pages
+        headline: Realisaties categories
+        layout: cards
+        image:
+          query: page.img1.toFile
+          cover: true
+        templates:
+          - realisatie-cat
 
         # section1: sections/example
 

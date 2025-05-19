@@ -1,4 +1,4 @@
-title: Home
+title: Accessoires
 options:
   changeStatus: true
 tabs:
@@ -11,6 +11,15 @@ tabs:
             type: line
 
       pages: sections/builder
+      accessoires:
+        type: pages
+        headline: Accessoires
+        layout: cards
+        image:
+          query: page.img1.toFile
+          cover: true
+        templates:
+          - accessoire
 
         # section1: sections/example
 

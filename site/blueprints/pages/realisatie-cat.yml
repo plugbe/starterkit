@@ -1,0 +1,38 @@
+title: Realisatie categorie
+options:
+  changeStatus: true
+tabs:
+  content:
+    sections: # here come the sections
+      fields: # a fields section
+        type: fields
+        fields:
+          line1:
+            type: line
+          
+          img1:
+            label: Thumbnail
+            type: files
+            multiple: false
+            uploads: image
+            query: page.images
+          
+          body1:
+            label: Korte beschrijving
+            type: text
+          
+      realisaties:
+        type: pages
+        headline: Realisaties
+        layout: cards
+        image:
+          query: page.img1.toFile
+          cover: true
+        templates:
+          - realisatie
+
+        # section1: sections/example
+
+  # files: tabs/files
+  bestanden: tabs/files
+  seo: seo/page

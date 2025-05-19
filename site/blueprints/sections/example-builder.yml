@@ -1,0 +1,93 @@
+# label: Inhoud
+# type: builder
+# # columns: 1
+# # max: 10
+# fieldsets:
+#   cards1: sections/cards
+
+#   content1:
+#     name: Gekleurd vlak
+#     fields:
+#       imgsize1:
+#         label: Beeld grotte
+#         type: radio
+#         options:
+#           large: breed beeld
+#           small: smal beeld
+#       img1:
+#         label: Afbeelding
+#         type: files
+#         multiple: false
+#         uploads: false
+#       quote1:
+#         label: Quote
+#         type: textarea
+#         buttons: false
+#       title1:
+#         label: Titel
+#         type: text
+#       body1:
+#         label: Tekst
+#         type: textarea
+  
+#   content2:
+#     name: Inhoud wit vlak
+#     fields:
+#       position1:
+#         label: Position
+#         type: radio
+#         options:
+#           left: Beeld links
+#           right: Beeld rechts
+#         required: true
+#       imgsize1:
+#         label: Beeld grootte
+#         type: radio
+#         options:
+#           large: Breed beeld
+#           small: Smal beeld
+#         required: true
+#       imgtoborder1:
+#         type: toggle
+#         text: Beeld tot rand
+#       img1:
+#         label: Afbeelding
+#         type: files
+#         multiple: false
+#         uploads: false
+#       typetext1:
+#         label: Quote
+#         type: toggle
+#         default: off
+#       body1title:
+#         label: Titel
+#         type: text
+#         when:
+#           typetext1: off
+#       body1:
+#         label: Text
+#         type: textarea
+#         when:
+#           typetext1: off
+#       body1btntitle:
+#         label: Knopnaam
+#         type: text
+#       body1btn:
+#         label: Knop
+#         type: url
+#         when:
+#           typetext1: off
+#       body2:
+#         label: Quote
+#         type: textarea
+#         buttons: false
+#         when:
+#           typetext1: on
+#       body2extra:
+#         label: Quote extra
+#         type: textarea
+#         buttons:
+#           - bold
+#         when:
+#           typetext1: on
+      

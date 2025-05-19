@@ -1,0 +1,33 @@
+title: popup
+options:
+  changeStatus: false
+tabs: 
+  content: 
+    label: Content
+    icon: text
+    columns:
+      sidebar:
+        width: 1/3
+        sections:
+          files: 
+            type: files
+            headline: files
+            template: image
+            uploads: image
+      main: 
+        width: 2/3
+        sections:
+          content:
+            type: fields
+            fields:
+              text:
+                label: Tekst
+                type: textarea
+              display1:
+                label: Popup tonen
+                type: checkboxes
+                options:
+                  showpop: Ja
+
+  seo: seo/page
+

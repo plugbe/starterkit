@@ -1,4 +1,4 @@
-title: Home
+title: Gallerij
 options:
   changeStatus: true
 tabs:
@@ -10,10 +10,14 @@ tabs:
           line1:
             type: line
 
-      pages: sections/builder
+          img1:
+            label: Afbeeldingen
+            type: files
+            multiple: true
+            uploads: image
+            query: page.images
 
-        # section1: sections/example
+            # section1: sections/example
 
   # files: tabs/files
   bestanden: tabs/files
-  seo: seo/page

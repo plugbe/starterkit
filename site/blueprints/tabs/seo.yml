@@ -1,0 +1,17 @@
+label: SEO
+icon: search
+fields:
+  seotitle:
+    label: SEO Titel
+    type: text
+  seodescription:
+    label: SEO Beschrijving
+    type: textarea
+    buttons: false
+  seoimg:
+    label: SEO Beeld
+    type: files
+    uploads: image
+    multiple: false
+    translate: false
+    query: page.images

@@ -1,32 +1,107 @@
-# The `site.yml` blueprint defines the look of the start page (Dashboard) of the Panel.
-
-# The site blueprint usually provides easy access to all main pages of the site.
-# In this example blueprint, we also show subpages of the `photography` and `notes` pages.
-# More about the site blueprint: https://getkirby.com/docs/reference/panel/blueprints/site
-
-# The layout of this form has two columns:
-columns:
-  # The first column has one section for the subpages of the `photography` page in card layout
-  # It reuses the pages section defined in `/site/blueprints/sections/albums.yml`
-  - width: 1/2
+title: Site
+#preset: pages
+#unlisted: true
+options:
+  changeTitle: false
+tabs: 
+  main:
+    label: Pagina's
+    icon: page
     sections:
-      albums: sections/albums
-
-  # The second column has two sections, `notes` and `pages`
-  - width: 1/2
-    sections:
-      # The `notes` section reuses the pages section defined in `/site/blueprints/sections/notes.yml`
-      notes: sections/notes
-
-      # The `pages` pages section shows other main pages of the site
-      # Using the `templates` option, we limit which types of pages are shown
-      # Using the `create` option, we limit the type of page that can be created when a new page is created
-      # Note that the `sandbox` page and the `error` page that also exist in the content folder but use different blueprints thus do not show up in the list
-      # Since the error page's blueprint is set to `read: false`, it wouldn't show up here even if you added the error blueprint to the templates list
-      pages:
+      fields:
+        type: fields
+        fields:
+          nav1:
+            label: Navigatie
+            type: multiselect
+            translate: false
+            options:
+              type: query
+              query: site.children.listed
+              text: "{{ item.title}}"
+              value: "{{ item.id }}"
+          
+          line1:
+            type: line
+          
+      hidden1:
         type: pages
-        create: default
+        headline: Onzichtbare pagina's
+        image: false
         templates:
-          - about
+          - privacy
+      
+      pages1:
+        type: pages
+        headline: Pagina's
+        image: false
+        templates:
           - home
           - default
+          - accessoires
+          - realisaties
+          - contact
+
+      fields2:
+        type: fields
+        fields:
+          line2:
+            type: line
+          
+          contact1:
+            label: Alg. informatie
+            type: textarea
+            width: 1/3
+          
+          info1:
+            label: Info
+            type: structure
+            fields:
+              icon1:
+                label: Icon
+                type: select
+                options:
+                  - mail
+                  - phone
+                  - location
+              text1:
+                label: Text
+                type: textarea
+          
+          newsletter1:
+            label: Contact
+            type: textarea
+          
+          socials1:
+            label: Social Media
+            type: structure
+            entry: >
+              {{socialtype1}}
+            fields:
+              socialtype1:
+                label: Social Media Platform
+                type: radio
+                options:
+                  facebook: Facebook
+                  instagram: Instagram
+                  linkedin: LinkedIn
+              socialurl1:
+                label: Social Media link
+                type: url
+
+
+  variables:
+    label: Website instellingen
+    icon: cog
+    fields:
+
+      timestamp:
+        label: Timestamp
+        type: number
+
+      scripts1:
+        label: Scripts
+        type: textarea
+        buttons: false
+        translate: false
+  seo: seo/site

@@ -1,0 +1,12 @@
+{
+  "name": "plug/readmore",
+  "description": "Plug Kirbytext extension for read more",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Rémy",
+        "email": "remy@plug.be"
+    }
+  ]
+}

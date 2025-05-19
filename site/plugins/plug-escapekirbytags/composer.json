@@ -1,0 +1,12 @@
+{
+  "name": "plug/escapekirbytext",
+  "description": "Plug Kirbytext extension escape tags",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Rémy",
+        "email": "remy@plug.be"
+    }
+  ]
+}

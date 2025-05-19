@@ -1,0 +1,12 @@
+{
+  "name": "plug/columns",
+  "description": "Plug Kirbytext extension for columns",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+        "name": "Rémy",
+        "email": "remy@plug.be"
+    }
+  ]
+}

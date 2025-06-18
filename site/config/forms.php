@@ -4,15 +4,6 @@ $contactForm = function() {
     $form = new \Uniform\Form([
         'email' => [
             'rules' => ['required', 'email'],
-            'message' => 'Please enter a valid email address',
-        ],
-        'name' => [],
-        'message' => [
-            'rules' => ['required'],
-            'message' => 'Please enter a message',
-        ],
-        'email' => [
-            'rules' => ['required', 'email'],
             'message' => t('error-email'),
         ],
         'message' => [
@@ -41,11 +32,6 @@ $contactForm = function() {
         'from' => get('email'),
         'subject' => 'Boodschap van het contactformulier'
     ])
-    /*->emailAction([
-        'to' => 'form@plug.be',
-        'from' => get('email'),
-        'subject' => 'Boodschap van het contactformulier'
-    ])*/
     ->logAction([
         'file' => kirby()->roots()->site().'/logs/contact-form.log',
     ])

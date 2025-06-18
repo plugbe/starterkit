@@ -66,6 +66,12 @@ return [
             ]
         ]
     ],
+    'tobimori.seo.sitemap' => [
+        'groupByTemplate' => false, // Create separate sitemaps for each template type
+        'excludeTemplates' => ['error'], // Exclude templates from sitemap
+        'changefreq' => 'weekly', // Change frequency, can be a string or a function
+        'priority' => fn (Page $p) => number_format(($p->isHomePage()) ? 1 : max(1 - 0.2 * $p->depth(), 0.2), 1), // Priority, can be a string or a function
+    ],
     'thumbs' => [
         'srcsets' => [
             'default' => [
@@ -82,11 +88,5 @@ return [
             ]
         ]
     ],
-    'routes'    => [
-        [
-            'pattern'   => 'contact',
-            'method'    => 'POST',
-            'action'    => $contactForm
-        ]
-    ]
+    'routes'    => require_once 'routes.php'
 ];

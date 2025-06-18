@@ -46,7 +46,6 @@
 	<script src="<?= url('assets/js/plugins/ScrollTrigger.min.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/ScrollToPlugin.min.js') ?>" type="text/javascript"></script>
 
-    <script src="<?php echo url('assets/js/min/plugins.min.js?v=' . $site->timestamp()->text()); ?>" type="text/javascript"></script>
 	<script src="<?php echo url('assets/js/min/scripts.min.js?v=' . $site->timestamp()->text()); ?>" type="text/javascript"></script>
 
 	<?= snippet('seo/schemas'); ?>

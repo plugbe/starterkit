@@ -1,44 +1,19 @@
 import { fadeOut, fadeIn } from './components/transitions';
 import { contactForm } from './components/forms';
+import { popup } from './components/popup';
 
 $(() => {
 	init();
-
-	barba.init({
-        cacheIgnore: true,
-        transitions: [
-			{
-				leave: ({ current }) => fadeOut(current.container),
-				enter: ({ next }) => fadeIn(next.container),
-				// once: ({ next }) => quote(next.container)
-			},
-			// {
-			// 	to: { namespace: 'home' },
-			// 	once: ({ next }) => quote(next.container),
-			// }
-		]
-    });
-
-	barba.hooks.after((data) => {
-		const body = document.querySelector('body');
-
-		body.classList.remove(...body.classList);
-		body.classList.add(data.next.namespace);
-
-        init();
-
-		gsap.to(window, {duration: 0.3, scrollTo: 0});
-
-		ga('set', 'page', window.location.pathname);
-  		ga('send', 'pageview');
-	});
-
-    barba.hooks.before((data) => {
-		gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-	});
 })
 
 const init = () => {
+	const popupWindow = document.querySelector('#hiddenmodal');
+	if(popupWindow) {
+		if(Cookies.get('hideModal')) {
+			popup();
+		}
+	}
+
 	if($('form').length){
 		contactForm();
 	}

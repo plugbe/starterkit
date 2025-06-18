@@ -1,9 +1,9 @@
 import { addParam } from './parameters';
 
 //CONTACTFORM
-export const contactForm = () => {
-	let form = document.querySelector('#contact-form');
-	let message = form.querySelector('feedback');
+export const form = (element) => {
+	let form = document.querySelector(`#${element}-form`);
+	let message = form.querySelector(`#${element}-feedback`);
 	let fields = {};
 	form.querySelectorAll('[name]').forEach((field) => {
 		fields[field.name] = field;

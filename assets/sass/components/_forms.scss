@@ -59,8 +59,8 @@ form {
 	&.policy {
 		position: relative;
 		display: flex;
-		flex-direction: row;
-		align-items: center;
+		flex-direction: column;
+		gap: 10px;
 		margin: 0;
 		line-height: 2;
 		padding-block: 20px;

@@ -785,13 +785,11 @@ form .form-grid .form-group.w-full {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
-				-webkit-box-orient: horizontal;
+				-webkit-box-orient: vertical;
 				-webkit-box-direction: normal;
-				    -ms-flex-direction: row;
-				        flex-direction: row;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				gap: 10px;
 				margin: 0;
 				line-height: 2;
 				padding-block: 20px;

@@ -45,11 +45,6 @@
 			</div>
 		</header>
 
-		<div class="spacer"></div>
-
 		<div class="web-container">
-			<?php if($page->intendedTemplate() == "accessoire" || $page->intendedTemplate() == "realisatie-cat" || $page->intendedTemplate() == "realisatie"): ?>
-				<?= snippet('components/breadcrumbs'); ?>
-			<?php endif; ?>
 			<div class="<?= $page->template(); ?>__container" id="content">
 

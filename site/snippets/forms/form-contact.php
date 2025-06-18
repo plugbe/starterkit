@@ -22,4 +22,4 @@
 
     <button type="submit" class="btn border-red font-medium text-base text-red"><?= t('versturen') ?></button>
 </form>
-<p id="feedback"></p>
+<p id="contact-feedback"></p>

@@ -6,7 +6,7 @@ Text: Test inhoud
 
 ----
 
-Display1: 
+Display1: showpop
 
 ----
 
@@ -38,7 +38,7 @@ Ogdescription:
 
 ----
 
-Ogimage: 
+Ogimage: []
 
 ----
 

@@ -56,7 +56,7 @@ return [
         'active' => false
         ]
     ],
-    'tobimori.seo.canonicalBase' => 'https://www.becopanel.be',
+    'tobimori.seo.canonicalBase' => 'https://www.test.be',
     // 'tobimori.seo.lang' => 'nl-BE', // ENKEL ALS EEN TALIG WEBSITE IS
     'tobimori.seo.robots' => [
         'active' => true,

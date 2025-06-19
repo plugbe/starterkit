@@ -21,6 +21,7 @@ return [
     'yaml.handler' => 'symfony', // already makes use of the more modern Symfony YAML parser: https://getkirby.com/docs/reference/system/options/yaml (will become the default in a future Kirby version)
     'panel' => [
         'language' => 'nl',
+        'css'   => 'assets/css/panel.css',
         'menu'  => [
             'site' => [
 				'current' => function (): bool

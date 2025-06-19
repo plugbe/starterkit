@@ -1,4 +1,4 @@
-export const popup = () => {
+export const popup = (cookieKey) => {
 	const popup1 = Fancybox.show([{
 		src: "#hiddenmodal",
 		type: "inline",
@@ -6,7 +6,7 @@ export const popup = () => {
 	}], {
 		on: {
 			"close": (fancyboxRef, eventName) => {
-				Cookies.set('hideModal', true, { expires: 1 })
+				Cookies.set(cookieKey, true, { expires: 1 })
 			},
 		}
 	});

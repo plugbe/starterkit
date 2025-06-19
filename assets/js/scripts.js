@@ -7,8 +7,11 @@ const init = () => {
 	const popupWindow = document.querySelector('#hiddenmodal');
 
 	if(popupWindow) {
-		if(Cookies.get('hideModal') === undefined) {
-			popup();
+		const version = popupWindow.dataset.popupVersion;
+		const cookieKey = `hideModal-v${version}`;
+
+		if(Cookies.get(cookieKey) === undefined) {
+			popup(cookieKey);
 		}
 	}
 }

@@ -7,3 +7,6 @@
 [submodule "site/plugins/kirby-seo"]
 	path = site/plugins/kirby-seo
 	url = https://github.com/tobimori/kirby-seo.git
+[submodule "kirby"]
+	path = kirby
+	url = https://github.com/getkirby/kirby.git

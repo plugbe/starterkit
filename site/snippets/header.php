@@ -8,10 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 	<meta name="format-detection" content="telephone=no">
 
-
+	<?= snippet('plugins/styles'); ?>
 	<?= css('assets/css/style.css?v=' . $site->timestamp()->text()); ?>
-	<?= css('assets/css/jquery.fancybox.min.css'); ?>
-	<?= css('assets/css/swiper-bundle.min.css'); ?>
 
 	<!-- FAVICON'S ============================================================= -->
 	<link rel="icon" type="image/png" href="<?php echo url('assets/images/favicons/favicon.png') ?>" />
@@ -27,23 +25,7 @@
 	<?= snippet('components/popup'); ?>
 
 	<main data-barba="container" data-barba-namespace="<?= $page->template(); ?>">
-		<header class="header">
-			<div class="header-inner">
-				<div class="header-logo">
-					<div class="header-logo-inner">
-						<a href="<?= $site->url() ?>">
-							Logo
-						</a>
-					</div>
-				</div>
-
-				<div class="header-navigation">
-					<div class="header-navigation-inner">
-						<?= snippet('nav'); ?>
-					</div>
-				</div>
-			</div>
-		</header>
+		<?= snippet('components/header/header') ?>
 
 		<div class="web-container">
 			<div class="<?= $page->template(); ?>__container" id="content">

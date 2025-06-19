@@ -37,10 +37,8 @@
 	<!-- End Cookie Consent by TermsFeed Privacy Policy and Consent Generator https://www.TermsFeed.com -->
   
   <!-- JS ==================================================================== -->
-	<script src="<?= url('assets/js/plugins/barba.umd.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/fancybox.umd.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/swiper-bundle.min.js') ?>" type="text/javascript"></script>
-
 	<script src="<?= url('assets/js/plugins/gsap.min.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/ScrollTrigger.min.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/ScrollToPlugin.min.js') ?>" type="text/javascript"></script>

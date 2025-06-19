@@ -2,9 +2,7 @@ import { fadeOut, fadeIn } from './components/transitions';
 import { contactForm } from './components/forms';
 import { popup } from './components/popup';
 
-$(() => {
-	init();
-})
+init();
 
 const init = () => {
 	const popupWindow = document.querySelector('#hiddenmodal');

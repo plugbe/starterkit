@@ -37,7 +37,6 @@
 	<!-- End Cookie Consent by TermsFeed Privacy Policy and Consent Generator https://www.TermsFeed.com -->
   
   <!-- JS ==================================================================== -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/barba.umd.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/fancybox.umd.js') ?>" type="text/javascript"></script>
 	<script src="<?= url('assets/js/plugins/swiper-bundle.min.js') ?>" type="text/javascript"></script>

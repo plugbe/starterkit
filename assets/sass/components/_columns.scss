@@ -2,14 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    margin-left: rem(-10px);
+    margin-right: rem(-10px);
 }
 
 .column {
     flex: 0 1 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: rem(10px);
+    margin-right: rem(10px);
     max-width: 100%;
 }
 

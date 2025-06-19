@@ -2,18 +2,13 @@
 @import 'abstracts/fonts';
 @import 'abstracts/mixins';
 @import 'abstracts/functions';
-@import 'abstracts/animations';
 @import 'abstracts/variables';
 
 /* =============BASE==================== */
 
 @import 'base/plug';
-@import 'base/grid';
 @import 'base/typography';
 @import 'base/core';
-
-@import 'base/ie';
-
 @import 'base/ratio';
 
 /* =============COMPONENTS==================== */

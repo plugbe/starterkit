@@ -4,9 +4,3 @@ layout: table
 image: false
 templates:
   - b-banner
-  - b-cards
-  - b-content
-  - b-featured
-  - b-gallery
-  - b-image-full
-  - b-testimonials

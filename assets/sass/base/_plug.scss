@@ -1,21 +1,21 @@
 .text-sm {
-    font-size: $text-14;
+    font-size: $text-sm;
 }
 
 .text-base {
-    font-size: $text-18;
+    font-size: $text-base;
 }
 
 .text-lg {
-    font-size: $text-20;
+    font-size: $text-lg;
 }
 
 .text-xl {
-    font-size: $text-35;
+    font-size: $text-xl;
 }
 
 .text-2xl {
-    font-size: $text-50;
+    font-size: $text-2xl;
 }
 
 .font-regular {
@@ -36,10 +36,6 @@
 
 .text-black {
     color: $black;
-}
-
-.text-red {
-    color: $red;
 }
 
 .text-left {
@@ -66,24 +62,8 @@
     background-color: $black;
 }
 
-.bg-darkblue {
-    background-color: $darkblue;
-}
-
-.bg-gray {
-    background-color: $gray;
-}
-
-.bg-red {
-    background-color: $red;
-}
-
 .border-white {
     border: 2px solid $white;
-}
-
-.border-red {
-    border: 2px solid $red;
 }
 
 .shadow {

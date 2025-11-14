@@ -6,18 +6,18 @@ html {
 
 body {
     line-height: 1.3;
-    font-size: $text-18;
+    font-size: $text-base;
     font-family: $gotham;
     font-weight: $font-book;
 }
 
 h1 {
-    font-size: $text-50;
+    font-size: $text-2xl;
     line-height: 1;
 }
 
 h2 {
-    font-size: $text-35;
+    font-size: $text-xl;
 }
 
 h1, h2 {

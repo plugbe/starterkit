@@ -1,34 +1,22 @@
-<!-- Cookie Consent by TermsFeed Privacy Policy and Consent Generator https://www.TermsFeed.com -->
-<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
-    document.addEventListener('DOMContentLoaded', function () {
-        cookieconsent.run({
-            "notice_banner_type": "simple",
-            "consent_type": "express",
-            "palette": "light",
-            "language": "<?= $site->language(); ?>",
-            "page_load_consent_levels": ["strictly-necessary"],
-            "notice_banner_reject_button_hide": false,
-            "preferences_center_close_button_hide": false,
-            "page_refresh_confirmation_buttons": false,
-            "website_privacy_policy_url": "<?= page('privacy-policy')->url(); ?>",
-            "website_name": "Website Naam"
-        });
-    });
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"<?= $site->language()->code(); ?>","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"<?= page('legal/privacy-policy')->url(); ?>"});
+});
 </script>
 
-<!-- Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics PLUG-->
-<script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=IDHIER"></script>
-<script type="text/plain" cookie-consent="tracking">
+<!-- Unnamed script -->
+<script type="text/plain" data-cookie-consent="tracking" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=IDHIER"></script>
+<script type="text/plain" data-cookie-consent="tracking" cookie-consent="tracking">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'IDHIER');
 </script>
-<!-- end of Google Analytics-->
-<!-- End Cookie Consent by TermsFeed Privacy Policy and Consent Generator https://www.TermsFeed.com -->
+<!-- end of Unnamed script-->
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 
 <!-- JS ==================================================================== -->
 <script src="<?= url('assets/js/plugins/cookies.min.js') ?>" type="text/javascript"></script>

@@ -16,7 +16,7 @@
 
     <div class="form-group noline policy group-policy" id="group-policy">
         <input type="checkbox" id="policy" name="policy">
-        <label class="checkbox" for="policy"><?= t('ik-aanvaard-de') ?> <a href="<?= u('privacy-policy') ?>" target="_blank"><?= page('privacy-policy')->title()->txt(); ?></a></label>
+        <label class="checkbox text-white" for="policy"><?= t('ik-aanvaard-de') ?> <a href="<?= u('legal/privacy-policy') ?>" target="_blank"><?= page('legal/privacy-policy')->title()->txt(); ?></a></label>
         <p class="error-text error-policy"></p>
     </div>
 

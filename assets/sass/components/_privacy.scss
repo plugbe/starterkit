@@ -46,6 +46,7 @@
 
         line-height: 1.5!important;
         font-size: 12px!important;
+        margin: 0!important;
         // font-family: $sofia!important;
         // font-weight: $regular!important;
 
@@ -61,12 +62,14 @@
     }
 
     &-okagree {
-        background: none!important;
+        background: rgba($white, 1)!important;
         border:none!important;
-        color: $white!important;
+        color: $black!important;
+        display: block;
+        border: 1px solid $white!important;
 
         &:hover {
-            background: $black!important;
+            background: none!important;
             color: $white!important;
         }
     }
@@ -76,11 +79,16 @@
         border:  none!important;
         color: $white!important;
         opacity: 40%!important;
+        display: none;
+        visibility: hidden;
     }
 
     &-changep {
-        color: $black!important;
-        background: rgba($white, 0.7)!important;
+        color: $white!important;
+        background: none!important;
+        display: block;
+        margin-bottom: 0!important;
+        margin-right: 0!important;
         // display: none!important;
     }
 
@@ -90,8 +98,8 @@
             grid-row: 1 / 3;
             
             display: flex!important;
-            flex-direction: row!important;
-            justify-content: flex-end!important;
+            flex-direction: row-reverse!important;
+            justify-content: flex-start!important;
             align-items: center!important;
             height: 100%!important;
 
@@ -111,6 +119,9 @@
                 // border-radius: 20px!important;
                 align-self: flex-end!important;
                 padding: 10px 20px!important;
+                margin: 0!important;
+                margin-bottom: 0!important;
+                margin-right: 0!important;
 
                 @include tablet {
                     width: 100%!important;
@@ -133,4 +144,9 @@
             }
         }
     }
+}
+
+.termsfeed-com---nb .cc-nb-okagree, .termsfeed-com---nb .cc-nb-reject, .termsfeed-com---nb .cc-nb-changep {
+    margin-bottom: 0!important;
+    margin-right: 0!important;
 }

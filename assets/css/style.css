@@ -332,6 +332,7 @@ img {
 				color: #FAFAFA !important;
 				line-height: 1.5 !important;
 				font-size: 12px !important;
+				margin: 0 !important;
 }
 .cc-nb-text-container {
 				-ms-grid-column: 1;
@@ -348,12 +349,14 @@ img {
 				}
 }
 .cc-nb-okagree {
-				background: none !important;
+				background: #fafafa !important;
 				border: none !important;
-				color: #FAFAFA !important;
+				color: #3B3B3B !important;
+				display: block;
+				border: 1px solid #FAFAFA !important;
 }
 .cc-nb-okagree:hover {
-				background: #3B3B3B !important;
+				background: none !important;
 				color: #FAFAFA !important;
 }
 .cc-nb-reject {
@@ -361,10 +364,15 @@ img {
 				border: none !important;
 				color: #FAFAFA !important;
 				opacity: 40% !important;
+				display: none;
+				visibility: hidden;
 }
 .cc-nb-changep {
-				color: #3B3B3B !important;
-				background: rgba(250, 250, 250, 0.7) !important;
+				color: #FAFAFA !important;
+				background: none !important;
+				display: block;
+				margin-bottom: 0 !important;
+				margin-right: 0 !important;
 }
 .cc-nb-buttons-container {
 				-ms-grid-column: 2;
@@ -377,12 +385,12 @@ img {
 				display: -ms-flexbox !important;
 				display: flex !important;
 				-webkit-box-orient: horizontal !important;
-				-webkit-box-direction: normal !important;
-				    -ms-flex-direction: row !important;
-				        flex-direction: row !important;
-				-webkit-box-pack: end !important;
-				    -ms-flex-pack: end !important;
-				        justify-content: flex-end !important;
+				-webkit-box-direction: reverse !important;
+				    -ms-flex-direction: row-reverse !important;
+				        flex-direction: row-reverse !important;
+				-webkit-box-pack: start !important;
+				    -ms-flex-pack: start !important;
+				        justify-content: flex-start !important;
 				-webkit-box-align: center !important;
 				    -ms-flex-align: center !important;
 				        align-items: center !important;
@@ -406,6 +414,9 @@ img {
 				-ms-flex-item-align: end !important;
 				    align-self: flex-end !important;
 				padding: 10px 20px !important;
+				margin: 0 !important;
+				margin-bottom: 0 !important;
+				margin-right: 0 !important;
 }
 @media (max-width: 1000px) {
 				.cc-nb-buttons-container button {
@@ -419,6 +430,11 @@ img {
 .cc-cp-foot-save:focus {
 				outline: none !important;
 				border: none !important;
+}
+
+.termsfeed-com---nb .cc-nb-okagree, .termsfeed-com---nb .cc-nb-reject, .termsfeed-com---nb .cc-nb-changep {
+				margin-bottom: 0 !important;
+				margin-right: 0 !important;
 }
 
 form, input, label, textarea {
@@ -602,8 +618,11 @@ input.error, textarea.error {
 				margin-left: 5px;
 }
 
+.fancybox__backdrop {
+				background: rgba(59, 59, 59, 0.5);
+}
 .fancybox__content {
-				padding: 5rem !important;
+				padding: 0 !important;
 }
 .fancybox__content .carousel__button.is-close {
 				top: 0 !important;

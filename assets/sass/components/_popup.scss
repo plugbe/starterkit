@@ -1,6 +1,9 @@
 .fancybox {
+    &__backdrop {
+        background: rgba($black, 0.5);
+    }
     &__content {
-        padding: 5rem!important;
+        padding: 0!important;
 
         .carousel__button {
     

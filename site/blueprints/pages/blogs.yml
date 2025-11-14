@@ -1,4 +1,4 @@
-title: Blog
+title: Blogs
 options:
   changeStatus: true
 tabs:
@@ -9,19 +9,17 @@ tabs:
         fields:
           line1:
             type: line
-          
-          img1:
-            label: Thumbnail
-            type: files
-            multiple: false
-            uploads: image
-            query: page.images
-          
-          body1:
-            label: Korte beschrijving
-            type: text
 
       pages: sections/builder
+      accessoires:
+        type: pages
+        headline: Blog
+        layout: cards
+        image:
+          query: page.img1.toFile
+          cover: true
+        templates:
+          - blog
 
         # section1: sections/example
 

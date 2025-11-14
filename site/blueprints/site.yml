@@ -29,7 +29,7 @@ tabs:
         headline: Onzichtbare pagina's
         image: false
         templates:
-          - privacy
+          - legal
       
       pages1:
         type: pages

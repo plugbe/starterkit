@@ -1,0 +1,6 @@
+type: pages
+headline: Inhoud
+layout: table
+image: false
+templates:
+  - privacy

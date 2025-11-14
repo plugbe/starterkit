@@ -2,7 +2,7 @@
 <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"<?= $site->language()->code(); ?>","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"<?= page('legal/privacy-policy')->url(); ?>"});
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"<?= $kirby->language()->code(); ?>","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_privacy_policy_url":"<?= page('legal/privacy-policy')->url(); ?>"});
 });
 </script>
 

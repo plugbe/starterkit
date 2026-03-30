@@ -24,12 +24,11 @@ return [
         'css'   => 'assets/css/panel.css',
         'menu'  => [
             'site' => [
-				'current' => function (): bool
-				{
-					$path = App::instance()->request()->path()->toString();
-					return Str::contains($path, 'site');
-				},
-			],
+                'current' => function (): bool {
+                    $path = App::instance()->request()->path()->toString();
+                    return Str::contains($path, 'site');
+                },
+            ],
             'system',
             'users',
             '-',
@@ -39,21 +38,22 @@ return [
                 'icon'  => 'megaphone',
                 'label' => 'Pop-up',
                 'link'  => 'pages/popup',
-                'current' => function (): bool
-				{
-					$path = App::instance()->request()->path()->toString();
-					return Str::contains($path, 'pages/popup');
-				},
+                'current' => function (): bool {
+                    $path = App::instance()->request()->path()->toString();
+                    return Str::contains($path, 'pages/popup');
+                },
             ],
+            '-',
+            'retour'
         ]
     ],
-        'markdown' => [
+    'markdown' => [
         'safe'  => false
     ],
     # enable cache
     'cache' => [
         'pages' => [
-        'active' => false
+            'active' => false
         ]
     ],
     'tobimori.seo.canonicalBase' => 'https://www.test.be',
@@ -71,7 +71,7 @@ return [
         'groupByTemplate' => false, // Create separate sitemaps for each template type
         'excludeTemplates' => ['error'], // Exclude templates from sitemap
         'changefreq' => 'weekly', // Change frequency, can be a string or a function
-        'priority' => fn (Page $p) => number_format(($p->isHomePage()) ? 1 : max(1 - 0.2 * $p->depth(), 0.2), 1), // Priority, can be a string or a function
+        'priority' => fn(Page $p) => number_format(($p->isHomePage()) ? 1 : max(1 - 0.2 * $p->depth(), 0.2), 1), // Priority, can be a string or a function
     ],
     'thumbs' => [
         'srcsets' => [

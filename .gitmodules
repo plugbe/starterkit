@@ -13,3 +13,6 @@
 [submodule "site/plugins/retour"]
 	path = site/plugins/retour
 	url = https://github.com/distantnative/retour-for-kirby.git
+[submodule "site/plugins/dotenv"]
+	path = site/plugins/dotenv
+	url = https://github.com/bnomei/kirby3-dotenv.git

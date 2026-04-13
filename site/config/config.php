@@ -3,6 +3,7 @@
 
 use Kirby\Cms\App;
 use Kirby\Uuid\Uuid;
+use Kirby\Cms\Page;
 
 
 /**

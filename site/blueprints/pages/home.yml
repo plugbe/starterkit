@@ -10,7 +10,7 @@ tabs:
           line1:
             type: line
 
-      pages: sections/builder
+          blocks1: sections/components
 
         # section1: sections/example
 

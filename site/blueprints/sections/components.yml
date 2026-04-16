@@ -1,0 +1,4 @@
+label: Inhoud
+type: blocks
+fieldsets:
+  masonry: sections/components/example

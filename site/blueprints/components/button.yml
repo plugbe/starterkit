@@ -1,5 +1,5 @@
 label: Button
-type: structure
+type: object
 fields:
   btnlabel:
     label: Button text
@@ -7,3 +7,6 @@ fields:
   btnlink:
     label: Button link
     type: link
+  tab1:
+    label: Nieuwe venster openen
+    type: toggle

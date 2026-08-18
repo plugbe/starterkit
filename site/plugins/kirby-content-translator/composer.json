@@ -1,0 +1,58 @@
+{
+  "name": "johannschopplich/kirby-content-translator",
+  "description": "DeepL & AI-powered content translation for Kirby CMS",
+  "type": "kirby-plugin",
+  "version": "3.11.2",
+  "keywords": [
+    "content",
+    "DeepL",
+    "i18n",
+    "kirby",
+    "language",
+    "translation",
+    "translator"
+  ],
+  "license": "proprietary",
+  "homepage": "https://kirby.tools/content-translator",
+  "authors": [
+    {
+      "name": "Johann Schopplich",
+      "email": "hello@johannschopplich.com",
+      "homepage": "https://johannschopplich.com"
+    }
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1",
+    "johannschopplich/kirby-tools-licensing": "^0.9",
+    "johannschopplich/kirby-tools-utils": "^0.1"
+  },
+  "require-dev": {
+    "getkirby/cms": "^5",
+    "getkirby/cli": "^1",
+    "vlucas/phpdotenv": "^5",
+    "phpunit/phpunit": "^12"
+  },
+  "scripts": {
+    "dev": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8000 -t playground/public vendor/getkirby/cms/router.php"
+    ],
+    "csfix": "@php tools/phpcs/vendor/bin/php-cs-fixer fix",
+    "test": "phpunit",
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "autoload": {
+    "psr-4": {
+      "JohannSchopplich\\": "src/classes/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

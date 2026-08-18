@@ -1,0 +1,65 @@
+<?php
+
+use JohannSchopplich\KirbyTools\FieldResolver;
+use Kirby\Toolkit\I18n;
+
+return [
+    'content-translator' => [
+        'props' => [
+            'label' => fn ($label = null) => I18n::translate($label, $label),
+            'import' => fn ($import = null) => is_bool($import) ? $import : null,
+            'importFrom' => function ($importFrom = null) {
+                if ($importFrom === 'all') {
+                    return 'all';
+                }
+
+                return $importFrom;
+            },
+            'batch' => fn ($batch = null) => is_bool($batch) ? $batch : null,
+            'title' => fn ($title = null) => is_bool($title) ? $title : null,
+            'slug' => fn ($slug = null) => is_bool($slug) ? $slug : null,
+            'confirm' => fn ($confirm = null) => is_bool($confirm) ? $confirm : null,
+            'fieldTypes' => function ($fieldTypes = null) {
+                if (!is_array($fieldTypes)) {
+                    return null;
+                }
+
+                return array_map('strtolower', $fieldTypes);
+            },
+            'includeFields' => function ($includeFields = null) {
+                if (!is_array($includeFields)) {
+                    return null;
+                }
+
+                return array_map('strtolower', $includeFields);
+            },
+            'excludeFields' => function ($excludeFields = null) {
+                if (!is_array($excludeFields)) {
+                    return null;
+                }
+
+                return array_map('strtolower', $excludeFields);
+            },
+            'kirbyTags' => function ($kirbyTags = null) {
+                if (!is_array($kirbyTags)) {
+                    return null;
+                }
+
+                return $kirbyTags;
+            },
+            'provider' => function ($provider = null) {
+                if (!is_string($provider)) {
+                    return null;
+                }
+
+                return in_array($provider, ['deepl', 'ai'], true) ? $provider : null;
+            },
+            'systemPrompt' => fn ($systemPrompt = null) => is_string($systemPrompt) ? trim($systemPrompt) : null
+        ],
+        'computed' => [
+            'fields' => function () {
+                return FieldResolver::resolveModelFields($this->model());
+            }
+        ]
+    ]
+];

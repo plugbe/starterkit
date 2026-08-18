@@ -37,6 +37,7 @@ tabs:
         image: false
         templates:
           - home
+          - blogs
           - default
           - contact
 

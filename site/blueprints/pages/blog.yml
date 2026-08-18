@@ -10,6 +10,11 @@ tabs:
           line1:
             type: line
           
+          pubdate1:
+            label: Publicatie datum
+            type: date
+            default: now
+          
           img1:
             label: Thumbnail
             type: files

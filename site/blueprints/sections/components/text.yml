@@ -1,0 +1,123 @@
+name: Tekst + Beeld
+fields:
+  img1:
+    label: Afbeelding
+    type: files
+    multiple: true
+    width: 1/2
+  
+  video1:
+    label: Video
+    type: url
+    help: Direct link naar source
+    width: 1/2
+
+  title1:
+    label: Titel
+    type: text
+
+  body1:
+    label: Tekst
+    type: textarea
+
+  btn1: components/button
+  
+  quote1:
+    label: Quote
+    type: object
+    fields:
+      quote1:
+        label: Quote
+        type: text
+      author1:
+        label: Auteur
+        type: text
+  
+  cards1:
+    label: Kaarten
+    type: structure
+    max: 2
+    fields:
+      title1:
+       label: Titel
+       type: text
+      body1:
+        label: Tekst
+        type: textarea
+
+  settings:
+    label: Instellingen
+    type: headline
+  
+  mirror1:
+    label: Spiegelen
+    type: toggle
+    help: Foto en tekst spiegelen
+    width: 1/3
+  
+  alignend1:
+    label: Text onderaan aligneren
+    type: toggle
+    width: 1/3
+  
+  color1:
+    label: Kleur text achtergrond
+    type: color
+    mode: options
+    alpha: true
+    width: 1/3
+    default: "#FFFFFF00"
+    options:
+      - "#FFFFFF00"
+      - "#E0DBD7"
+      - "#211515"
+  
+  center1:
+    label: Centreren (geen afbeelding)
+    type: toggle
+
+  ratio1:
+    label: Afbeelding verhouding forceren
+    type: radio 
+    default: auto
+    options:
+      auto: Auto
+      landscape: Landscape
+      portrait: Portrait
+      square: Square
+    help: Verhouding zijn automatisch per foto, met deze instelling kan je een verhouding forceren indien het niet klopt
+
+    
+  spacetop:
+    label: Witruimte boven
+    type: radio
+    default: "0"
+    options:
+      - value: '0'
+        text: Geen
+      - value: '1'
+        text: 1x
+      - value: '2'
+        text: 2x
+      - value: '3'
+        text: 3x
+    width: 1/2
+  
+  spacebottom:
+    label: Witruimte onder
+    type: radio
+    default: "0"
+    options:
+      - value: '0'
+        text: Geen
+      - value: '1'
+        text: 1x
+      - value: '2'
+        text: 2x
+      - value: '3'
+        text: 3x
+    width: 1/2
+    
+
+
+  

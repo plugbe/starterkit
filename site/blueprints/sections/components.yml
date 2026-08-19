@@ -1,36 +1,4 @@
 label: Inhoud
 type: blocks
 fieldsets:
-  textlogo: sections/components/textlogo
-
-  textlogocol: sections/components/textlogocol
-  
   text1: sections/components/text
-
-  textgrid: sections/components/textgrid
-
-  media: sections/components/media
-
-  counter: sections/components/counter
-  
-  cards: sections/components/cards
-
-  gridcards: sections/components/gridcards
-
-  works: sections/components/works
-
-  jobs: sections/components/jobs
-
-  kollega: sections/components/kollega
-
-  carousel: sections/components/carousel
-
-  faq1: sections/components/faq
-
-  imagerow: sections/components/imagerow
-
-  selection: sections/components/selection
-
-  quote1: sections/components/quote
-
-  storycarousel: sections/components/storycarousel

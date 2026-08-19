@@ -6,6 +6,27 @@ use Kirby\Uuid\Uuid;
 use Kirby\Cms\Page;
 
 
+$translatorAccounts = [
+    'helpdesk@reclamebureauplug.be',
+];
+
+$translatorButton = function (App $kirby) use ($translatorAccounts) {
+    $user = $kirby->user();
+
+    if (!$user) {
+        return null;
+    }
+
+    if (!in_array(strtolower($user->email()), $translatorAccounts, true)) {
+        return null;
+    }
+
+    return [
+        'component' => 'k-content-translator-view-button',
+    ];
+};
+
+
 /**
  * The config file is optional. It accepts a return array with config options
  * Note: Never include more than one return statement, all options go within this single return array
@@ -46,7 +67,25 @@ return [
             ],
             '-',
             'retour'
-        ]
+        ],
+        'viewButtons' => [
+            'site' => [
+                'open',
+                'preview',
+                '-',
+                'content-translator' => $translatorButton,
+                'languages',
+            ],
+            'page' => [
+                'open',
+                'preview',
+                '-',
+                'settings',
+                'content-translator' => $translatorButton,
+                'languages',
+                'status',
+            ],
+        ],
     ],
     'markdown' => [
         'safe'  => false
@@ -55,6 +94,11 @@ return [
     'cache' => [
         'pages' => [
             'active' => false
+        ]
+    ],
+    'johannschopplich.content-translator' => [
+        'DeepL' => [
+            'apiKey' => ''
         ]
     ],
     'tobimori.seo.canonicalBase' => 'https://www.test.be',

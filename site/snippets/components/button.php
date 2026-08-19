@@ -1,1 +1,6 @@
-<a href="<?= $btn->btnlink()->toUrl() ?>" class="btn text-<?= $color ?> text-lg border-<?= $color ?> font-medium"><?= $btn->btnlabel() ?></a>
+<a
+    <?= $btn->tab1()->toBool() ? 'target="_blank"' : false ?>
+    href="<?= $btn->btnlink()->toUrl() ?><?= $btn->btnanchor()->txt() ?>"
+    class="btn">
+    <?= $btn->btnlabel() ?>
+</a>

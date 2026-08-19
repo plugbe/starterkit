@@ -1,0 +1,9 @@
+label: Accordion
+type: structure
+fields:
+  q1:
+    label: Titel
+    type: text
+  a1:
+    label: Tekst
+    type: textarea

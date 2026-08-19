@@ -7,6 +7,9 @@ fields:
   btnlink:
     label: Button link
     type: link
+  btnanchor:
+    label: Anker indien andere pagina
+    type: text
   tab1:
     label: Nieuwe venster openen
     type: toggle

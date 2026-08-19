@@ -1,0 +1,24 @@
+label: Banner
+type: object
+fields:
+  banner1:
+    label: Banner
+    type: files
+    multiple: true
+    required: true
+    width: 1/2
+  
+  video1:
+    label: Video
+    type: url
+    width: 1/2
+  
+  bannertext1:
+    label: Titel
+    type: textarea 
+  
+  body1:
+    label: Text
+    type: text
+  
+  btn1: components/button

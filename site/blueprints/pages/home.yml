@@ -9,6 +9,8 @@ tabs:
         fields:
           line1:
             type: line
+          
+          banner1: components/banner
 
           blocks1: sections/components
 

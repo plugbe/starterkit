@@ -1,0 +1,102 @@
+a.accordion {
+    border-bottom: 1px solid $black;
+    display: block;
+}
+
+.accordion {
+    padding-block: rem(30px);
+    transition: all .4s ease;
+    text-decoration: none;
+
+    &[open] {
+        .accordion {
+            &-summary {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        +.accordion-body {
+            max-height: 500px;
+            transition: max-height 0.6s ease, padding-bottom 0.6s ease;
+            padding-bottom: rem(25px);
+        }
+    }
+
+    &-summary {
+        list-style: none;
+        list-style-type: none;
+        cursor: pointer;
+        position: relative;
+        padding-right: rem(20px);
+        font-size: $text-lg;
+        font-weight: $font-medium;
+        color: $black;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(10px);
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+
+        i {
+            display: block;
+            width: rem(15px);
+            min-width: rem(15px);
+            height: rem(15Px);
+
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                path,
+                polygon {
+                    fill: $darkblue;
+                }
+            }
+        }
+    }
+
+    &-body {
+        max-height: 1px;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding-bottom 0.4s ease;
+        padding-bottom: 0;
+        border-bottom: 1px solid $black;
+
+        .btn {
+            margin-top: rem(30px);
+        }
+
+        a {
+            color: $black;
+        }
+
+        ul {
+            padding: 0 0 0 rem(15px);
+        }
+
+
+        // border-bottom: 1px solid $black;
+
+
+        &.no-bg {
+            &:not(&:last-of-type) {
+                border-bottom: 1px solid rgba($darkblue, 0.5);
+            }
+        }
+
+        &:not(&:last-of-type) {
+
+            p {
+                margin-bottom: rem(10px);
+            }
+        }
+    }
+}

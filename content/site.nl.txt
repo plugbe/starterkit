@@ -2,7 +2,7 @@ Title: PLUG CMS
 
 ----
 
-Nav1: home, contact
+Nav1: home
 
 ----
 
@@ -10,7 +10,7 @@ Contact1:
 
 ----
 
-Socials1: 
+Socials1: []
 
 ----
 
@@ -26,7 +26,7 @@ Metatemplate: {{ title }} Lorem ipsum
 
 ----
 
-Metadescription: 
+Metadescription: Nulla eu Lorem reprehenderit nulla. Anim consequat sunt tempor aute sint nisi Lorem commodo enim. Magna fugiat consequat aute eiusmod voluptate consequat est sint anim esse. Dolor sunt veniam ut ea id dolor est adipisicing consequat minim exercitation dolore aliquip esse.
 
 ----
 
@@ -42,11 +42,11 @@ Ogsitename:
 
 ----
 
-Ogimage: 
+Ogimage: []
 
 ----
 
-Twittercardtype: summary
+Cropogimage: false
 
 ----
 
@@ -71,6 +71,10 @@ Robotssnippet: default
 ----
 
 Socialmediaaccounts: 
+
+----
+
+Twittercardtype: summary
 
 ----
 

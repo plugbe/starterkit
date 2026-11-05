@@ -90,6 +90,9 @@ return [
     'markdown' => [
         'safe'  => false
     ],
+    'auth' => [
+        'methods' => ['password', 'password-reset']
+    ],
     # enable cache
     'cache' => [
         'pages' => [

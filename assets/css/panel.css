@@ -1,10 +1,11 @@
 /*.k-panel{
     background: #ffffff;
 }*/
-.k-login-form{
+.k-login-form {
     position: relative;
 }
-.k-login-form:before{
+
+.k-login-form:before {
     width: 100px;
     height: 46px;
     position: relative;
@@ -19,6 +20,14 @@
     margin: 0 0 24px 0;
     display: block;
 }
-.k-activation-button, .k-activation {
-    display: none!important;
+
+.k-activation-button,
+.k-activation {
+    display: none !important;
+}
+
+.k-login-fields .k-login-toggler {
+    top: unset;
+    bottom: 45px;
+    color: black;
 }

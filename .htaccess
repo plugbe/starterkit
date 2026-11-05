@@ -35,11 +35,24 @@ RewriteRule ^site/(.*) index.php [L]
 # block direct access to Kirby and the Panel sources
 RewriteRule ^kirby/(.*) index.php [L]
 
+# block project/dev files that a deploy may upload (found public on a live site, Oct 2026):
+# agent instructions, docs (incl. PHP scripts), a Kirby 2 reference copy, build config
+RewriteRule ^(docs|OLD)(/|$) index.php [NC,L]
+RewriteRule ^(AGENTS?|CLAUDE|README)\.md$ index.php [NC,L]
+RewriteRule ^(composer\.(json|lock)|prepros\.(cfg|config))$ index.php [NC,L]
+
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*) index.php [L]
 
+</IfModule>
+
+# OLD/ (Kirby 2 copy during a conversion) has its own .htaccess whose RewriteEngine overrides
+# the rules above (rewrite rules aren't inherited into subfolders), so block it with mod_alias,
+# which is inherited. OLD/ shouldn't be deployed at all; this is the safety net for its logs.
+<IfModule mod_alias.c>
+RedirectMatch 404 (?i)^/OLD(/|$)
 </IfModule>
 
 # pass the Authorization header to PHP
